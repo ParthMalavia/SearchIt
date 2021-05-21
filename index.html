@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>SearchIt</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-primary mb-3">
+      <div class="container">
+        <span class="navbar-brand">SearchIt</span>
+      </div>
+    </nav>
+    <div id="search-container" class="container">
+      <div id="search" class="card card-body bg-light mb-2">
+        <h4>Search Reddit</h4>
+        <form id="search-form">
+          <div id="search-bar" class="form-group flow-row mb-3">
+            <input
+              type="text"
+              id="search-input"
+              class="form-control"
+              placeholder="Search here..."
+            />
+            <button id="search-btn" type="submit" class="btn btn-dark">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+          <div class="dropdown">
+            <button
+              type="button"
+              id="drop-btn"
+              class="btn btn-secondary drop-btn"
+            >
+              Advance <i class="fa fa-caret-down"></i>
+            </button>
+            <div id="dropdown-content" class="dropdown-content">
+              <br /><br />
+              <div class="form-check form-check-inline">
+                Sort By:
+                <input
+                  class="form-check-input ml-2"
+                  type="radio"
+                  name="sortby"
+                  value="relevance"
+                  checked
+                />
+                <label class="form-check-label">Relevance</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  type="radio"
+                  name="sortby"
+                  value="new"
+                  class="form-check-input"
+                />
+                <label class="form-check-label">Latest</label>
+              </div>
+              <div class="form-group">
+                <h5 class="ml-2">Limit:</h5>
+                <select name="limit" id="limit" class="form-control">
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                  <option value="25" selected>25</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="results"></div>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

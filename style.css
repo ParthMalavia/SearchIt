@@ -1,0 +1,87 @@
+
+#search-bar {
+  display: flex;
+}
+
+
+#search-btn {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+#search-bar * {
+  border: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+}
+
+.show {
+  display: contents;
+}
+
+.card-item {
+  display:flex;
+  flex: 1;
+  margin: 20px 0;
+  border-radius: 20px;
+}
+
+.card-item-link {
+  display:flex;
+  flex-flow: column;
+  width: 100%;
+  box-shadow: 1;
+}
+
+.flow-row {
+  flex-flow: row;
+}
+
+.image-div{
+  max-width: 100px;
+  max-height: 200px;
+  float: left;
+  position: relative;
+  padding-right: 10px;
+  /* overflow: hidden; */
+}
+
+.form-group{
+  padding-top: 15px;
+}
+
+
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+.read-more{
+  position: relative;
+  float: right;
+  justify-content: right;
+}
+
+img {
+  border-radius: 10px;
+}
+
+#limit {
+  border: none;
+  appearance: none;
+  background: url("./downArrow.png") white no-repeat right;
+  background-size: 20px;
+}
+/* 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("./downArrow.png") white no-repeat right;
+  background-size: 16px 16px;
+  background-position-x: calc(100%-100px) 1em;
+} */
