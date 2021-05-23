@@ -15,7 +15,7 @@ function toggleMenu() {
 window.onclick = function(e) {
   // to hide when click outside menu
   if (!e.target.matches('.drop-btn')) {
-    document.getElementById("dropdown-content").classList.toggle("show");
+    document.getElementById("dropdown-content").classList.remove("show");
   }
 }
 
